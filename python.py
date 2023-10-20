@@ -10,3 +10,7 @@ def home():
 @app.route('/enterdetails')
 def enterdetails():
   return render_template('enterdetails.html')
+
+@app.route('/flightbooked')
+def flightbooked():
+  return render_template('flightbooked.html')
