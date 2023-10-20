@@ -7,10 +7,12 @@ app= Flask(__name__)
 def home():
   return render_template('homesqlProject.html')
 
-@app.route('/enterdetails')
+@app.route('/enterdetailsProject')
 def enterdetails():
   return render_template('enterdetails.html')
 
-@app.route('/flightbooked')
+@app.route('/flightbookedProject')
 def flightbooked():
   return render_template('flightbooked.html')
+
+@app.route('/aboutProject')
