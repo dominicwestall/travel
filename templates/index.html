@@ -1,0 +1,108 @@
+<html>
+    <head>
+        <title>Home Page</title>
+    </head>
+    <body>
+
+        <img style="margin-left: 50px;" src="/static/logo.jpg">
+        <br>
+
+        <div id="menu">
+            <div style="display: table;">
+              <ul id="horizontal-list" >
+                <li style="display: inline;"><a href="#">Home</a></li>
+                <li style="display: inline;"><a href="/about">About</a></li>
+                <li style="display: inline;"><a href="/contact">Contact</a></li>
+                <li style="display: inline;"><a href="/reviews">Reviews</a></li>
+                <li style="display: inline;"><a href="/settings">Settings</a></li>
+                <li style="display: inline;"><a href="/signin">Sign in</a></li>
+                <li style="display: inline;"><a href="/cart">Cart</a></li>
+              </ul>
+            </div>
+          </div>
+
+        <!-- content varies for each page from here -->
+        <div id="contentOne"></div>
+        <div id="contentTwo">
+
+    <form action="/searchresults" method="post">
+
+        <table>
+            <tr>
+                <td>
+                    <input  type="radio" name="type" id="roundtrip" value="roundtrip" /><label style="display: inline;" for="track">Round trip</label>
+                    <input  type="radio" name="type" id="oneway" value="oneway"  /><label style="display: inline;" for="event">One way</label>
+                    <input  type="radio" name="type" id="multi" value="multi" /><label style="display: inline;" for="message">Multi City</label>
+                </td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td>
+                    From:
+                    <br>
+                        <select name="ddlDepartCity">
+                            <option selected="true" name="departcity">Departure City</option>
+                            <option name="auckland">Auckland</option>
+                            <option name="christchurch">Christchurch</option>
+                            <option name="wellington">wellington<option>
+                        </select>
+                </td>
+                <td>
+                    To:
+                    <br>
+                        <select name="ddlDetinationCity">
+                            <option selected="true" name="destinationcity">Destination City</option>
+                            <option name="sydney">Sydney</option>
+                            <option name="brisbane">Brisbane</option>
+                            <option name="perth">Perth</option>
+                            <option name="act">ACT</option>
+                        </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Leave date:
+                    <br>
+                    <input type="text" name="leavedate">
+                </td>
+                <td>
+                    Return date: 
+                    <br>
+                    <input type="text" name="returndate">
+                </td>
+                <td>
+                    Class
+                    <br>
+                    <select name="ddlClass">
+                        <option selected="true" name="economy">Economy</option>
+                        <option name="first">First</option>
+                        <option name="business">Business</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" name="departFlex"> Flexible
+                </td>
+                <td>
+                    <input type="checkbox" name="returnFlex"> Flexible
+                </td>
+                <td>
+
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <input type="submit" name="submit" value="Submit">
+                </td>
+            </tr>
+            <tr></tr>
+        </table>
+
+    </form>
+
+    </div>
+    </body>
+
+</html>

@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>Home Page</title>
+    </head>
+    <body>
+
+        <img style="margin-left: 50px;" src="/static/logo.jpg">
+        <br>
+
+        <div id="menu">
+            <div style="display: table;">
+              <ul id="horizontal-list" >
+                <li style="display: inline;"><a href="/">Home</a></li>
+                <li style="display: inline;"><a href="/about">About</a></li>
+                <li style="display: inline;"><a href="/contact">Contact</a></li>
+                <li style="display: inline;"><a href="/reviews">Reviews</a></li>
+                <li style="display: inline;"><a href="/settings">Settings</a></li>
+                <li style="display: inline;"><a href="/signin">Sign in</a></li>
+                <li style="display: inline;"><a href="/cart">Cart</a></li>
+              </ul>
+            </div>
+          </div>
+
+        <!-- content varies for each page from here -->
+        <div id="contentOne"></div>
+        <div id="contentTwo">
+        
+            <form method="post" action="/regsitertheuser">
+
+              <table>
+                <tr>
+                  <td>User Registration</td>
+                </tr>
+                <tr>
+                  <td>
+                    <table>
+                      <tr>
+                        <td><input type="text" name="email" value="Email"></td>
+                      </tr>
+                      <tr>
+                        <td><input type="password" name="password" value="Password"></td>
+                      </tr>
+                      <tr>
+                        <td><input type="submit" name="submit" value="Submit"></td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+
+            </form>
+        </div>
+    </body>
+
+</html>
