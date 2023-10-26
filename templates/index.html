@@ -16,7 +16,7 @@
                 <li style="display: inline;"><a href="/reviews">Reviews</a></li>
                 <li style="display: inline;"><a href="/settings">Settings</a></li>
                 <li style="display: inline;"><a href="/signin">Sign in</a></li>
-                <li style="display: inline;"><a href="/cart">Cart</a></li>
+                <!--<li style="display: inline;"><a href="/cart">Cart</a></li>-->
               </ul>
             </div>
           </div>
@@ -24,6 +24,10 @@
         <!-- content varies for each page from here -->
         <div id="contentOne"></div>
         <div id="contentTwo">
+
+            {% if msg %}
+                <p>{{ msg }}</p>
+            {% endif %}
 
     <form action="/searchresults" method="post">
 
