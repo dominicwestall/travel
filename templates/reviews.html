@@ -1,13 +1,37 @@
 <html>
     <head>
-        <title>Home Page</title>
+        <title>Reviews</title>
+        <style>
+          /* CSS class with padding on all sides */
+          .dom_one {
+            padding: 20px; /* Adjust the value as needed */
+          }
+          .dom_button{
+          padding: 5px 15px; cursor: pointer; border: 1 solid; border-radius: 5px;
+          }
+          .dom_table_design{
+            padding: 20px 20px;
+            margin-left:auto;
+            margin-right:auto;
+          }
+          .dom_logo{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 20%;
+          }
+          .center-menu {
+            display: table;
+            margin: 0 auto;
+          }
+      </style>
     </head>
     <body>
 
-        <img style="margin-left: 50px;" src="/static/logo.jpg">
+        <img class="dom_logo" src="/static/logo-no-background.png">
         <br>
 
-        <div id="menu">
+        <div id="menu" class="center-menu">
             <div style="display: table;">
               <ul id="horizontal-list" >
                 <li style="display: inline;"><a href="/">Home</a></li>
@@ -23,7 +47,7 @@
 
         <!-- content varies for each page from here -->
         <div id="contentOne"></div>
-        <div id="contentTwo">
+        <div id="contentTwo" class="center-menu">
         
             Reviews page
         </div>

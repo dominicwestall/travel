@@ -1,13 +1,37 @@
 <html>
     <head>
-        <title>Home Page</title>
+        <title>Sign in Page</title>
+        <style>
+          /* CSS class with padding on all sides */
+          .dom_one {
+            padding: 20px; /* Adjust the value as needed */
+          }
+          .dom_button{
+          padding: 5px 15px; cursor: pointer; border: 1 solid; border-radius: 5px;
+          }
+          .dom_table_design{
+            padding: 20px 20px;
+            margin-left:auto;
+            margin-right:auto;
+          }
+          .dom_logo{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 20%;
+          }
+          .center-menu {
+            display: table;
+            margin: 0 auto;
+          }
+      </style>
     </head>
     <body>
 
-        <img style="margin-left: 50px;" src="/static/logo.jpg">
+        <img class="dom_logo" src="/static/logo-no-background.png">
         <br>
 
-        <div id="menu">
+        <div id="menu" class="center-menu">
             <div style="display: table;">
               <ul id="horizontal-list" >
                 <li style="display: inline;"><a href="/">Home</a></li>
@@ -23,7 +47,7 @@
 
         <!-- content varies for each page from here -->
         <div id="contentOne"></div>
-        <div id="contentTwo">
+        <div id="contentTwo" class="center-menu">
           {% if msg %}
             <p>{{msg}}</p>
           {% endif %}
@@ -32,28 +56,28 @@
 
               <table>
                 <tr>
-                  <td>Sign In</td>
+                  <!-- <td>Sign In</td> -->
                 </tr>
                 <tr>
                   <td>
                     <table>
                       <tr>
-                        <td><input type="text" name="email" value="Email"></td>
+                        <td><input type='email' name="email" placeholder="Email" required style="width: 200px; height: 35px; border-radius: 5px;"></td><br><br>
                       </tr>
                       <tr>
-                        <td><input type="password" name="password" value="Password"></td>
+                        <td><br><br><input type="password" name="password" placeholder="Password" required style="width: 200px; height: 35px; border-radius: 5px;"></td>
                       </tr>
                       <tr>
-                        <td><input type="submit" name="submit" value="Submit"></td>
+                        <td><br><br><center><input type="submit" name="submit" value="Submit" style="width: 150px; height: 35px; cursor: pointer; border-radius: 10px; font-size: medium;"></center></td>
                       </tr>
                     </table>
                   </td>
                 </tr>
               </table>
-              <br>
-              New to Tripadvisor?
-              <a href="/registration">Join Now</a>
-
+              <br><br><center>
+              <span style="font-size: large;"><b>New to Tripadvisor?</span><br><br>
+              <a href="/registration"><span style="font-size: large;">Join Now</span></a>
+            </center>
             </form>
         </div>
     </body>
