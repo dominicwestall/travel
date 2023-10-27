@@ -1,12 +1,36 @@
 <html>
     <head>
         <title>Home Page</title>
+        <style>
+            /* CSS class with padding on all sides */
+            .dom_one {
+              padding: 20px; /* Adjust the value as needed */
+            }
+            .dom_button{
+            padding: 5px 15px; cursor: pointer; border: 1 solid; border-radius: 5px;
+            }
+            .dom_table_design{
+              padding: 20px 20px;
+              margin-left:auto;
+              margin-right:auto;
+            }
+            .dom_logo{
+              display: block;
+              margin-left: auto;
+              margin-right: auto;
+              width: 20%;
+            }
+            .center-menu {
+              display: table;
+              margin: 0 auto;
+            }
+        </style>
     </head>
-<body>
+<body style="background-color: powderblue;">
 
-<img style="margin-left: 50px;" src="/static/logo.jpg">
+<img class="dom_logo" src="/static/logo-no-background.png">
 <br>
-<div id="menu">
+<div id="menu" class="center-menu">
   <div style="display: table;">
     <ul id="horizontal-list" >
       <li style="display: inline;"><a href="/">Home</a></li>
@@ -23,23 +47,26 @@
 <!-- content varies for each page from here -->
 <div id="contentOne"></div>
 <div id="contentTwo">
-       
-Search results page
+
+<div class="center-menu">
+  Search results page
+</div>
+
 <br><br>
 <form action="" method="post">
-<table border="2" style="padding: 20px 20px;">
+<table border="2" class="dom_table_design">
 <tr>
   <td>
     <table border="1">
       <tr>
-        <td style="padding: 20px 20px;"><img src="/static/AirAsiaX.png"></td>
-        <td style="padding: 20px 20px;"><center><b>NZD 999</b></center></td>
-        <td style="padding: 20px 20px;"><center><button style="padding: 5px 15px; cursor: pointer; border: 1 solid; border-radius: 5px;">Select</button></center></td>
+        <td class="dom_one"><img src="/static/AirAsiaX.png" style="border-radius: 10px;"></td>
+        <td class="dom_one"><center><b>NZD $999</b></center></td>
+        <td class="dom_one"><center><button style="padding: 5px 15px; cursor: pointer; border: 1 solid; border-radius: 5px;">Select</button></center></td>
       </tr>
       <tr>
-        <td style="padding: 20px 20px;"><center><b>Departure Time</b><br><br> 15:00 hrs</center></td>
-        <td style="padding: 20px 20px;"><center><b>Flight Time</b> <br><br> 20 hrs </center></td>
-        <td style="padding: 20px 20px;"><center><b>Arrival Time</b><br><br> 5:00 hrs</center></td>
+        <td class="dom_one"><center><b>Departure Time</b><br><br> 15:00 hrs</center></td>
+        <td class="dom_one"><center><b>Flight Time</b> <br><br> 20 hrs </center></td>
+        <td class="dom_one"><center><b>Arrival Time</b><br><br> 5:00 hrs</center></td>
       </tr>             
     </table>
   </td>
@@ -51,14 +78,14 @@ Search results page
   <td>
     <table border="1">
       <tr>
-        <td style="padding: 20px 20px;"><img src="/static/AirAsiaX.png"></td>
-        <td style="padding: 20px 20px;"><center><b>NZD 999</b></center></td>
-        <td style="padding: 20px 20px;"><center><button style="padding: 5px 15px; cursor: pointer; border: 1 solid; border-radius: 5px;">Select</button></center></td>
+        <td class="dom_one"><img src="/static/BritishAirways.png" style="border-radius: 10px;"></td>
+        <td class="dom_one"><center><b>NZD $1298</b></center></td>
+        <td class="dom_one"><center><button class="dom_button">Select</button></center></td>
       </tr>
       <tr>
-        <td style="padding: 20px 20px;"><center><b>Departure Time</b><br><br> 15:00 hrs</center></td>
-        <td style="padding: 20px 20px;"><center><b>Flight Time</b> <br><br> 20 hrs </center></td>
-        <td style="padding: 20px 20px;"><center><b>Arrival Time</b><br><br> 5:00 hrs</center></td>
+        <td class="dom_one"><center><b>Departure Time</b><br><br> 13:00 hrs</center></td>
+        <td class="dom_one"><center><b>Flight Time</b> <br><br> 20 hrs </center></td>
+        <td class="dom_one"><center><b>Arrival Time</b><br><br> 9:00 hrs</center></td>
       </tr>             
     </table>
   </td>
@@ -70,14 +97,14 @@ Search results page
   <td>
     <table border="1">
       <tr>
-        <td style="padding: 20px 20px;"><img src="/static/AirAsiaX.png"></td>
-        <td style="padding: 20px 20px;"><center><b>NZD 999</b></center></td>
-        <td style="padding: 20px 20px;"><center><button style="padding: 5px 15px; cursor: pointer; border: 1 solid; border-radius: 5px;">Select</button></center></td>
+        <td class="dom_one"><img src="/static/SingaporeAirlines2.png" style="border-radius: 10px;"></td>
+        <td class="dom_one"><center><b>NZD $1025</b></center></td>
+        <td class="dom_one"><center><button class="dom_button">Select</button></center></td>
       </tr>
       <tr>
-        <td style="padding: 20px 20px;"><center><b>Departure Time</b><br><br> 15:00 hrs</center></td>
-        <td style="padding: 20px 20px;"><center><b>Flight Time</b> <br><br> 20 hrs </center></td>
-        <td style="padding: 20px 20px;"><center><b>Arrival Time</b><br><br> 5:00 hrs</center></td>
+        <td class="dom_one"><center><b>Departure Time</b><br><br> 8:00 hrs</center></td>
+        <td class="dom_one"><center><b>Flight Time</b> <br><br> 21 hrs </center></td>
+        <td class="dom_one"><center><b>Arrival Time</b><br><br> 5:00 hrs</center></td>
       </tr>             
     </table>
   </td>
@@ -89,14 +116,204 @@ Search results page
   <td>
     <table border="1">
       <tr>
-        <td style="padding: 20px 20px;"><img src="/static/AirAsiaX.png"></td>
-        <td style="padding: 20px 20px;"><center><b>NZD 999</b></center></td>
-        <td style="padding: 20px 20px;"><center><button style="padding: 5px 15px; cursor: pointer; border: 1 solid; border-radius: 5px;">Select</button></center></td>
+        <td class="dom_one"><img src="/static/AirNewZealand.png" style="border-radius: 10px;"></td>
+        <td class="dom_one"><center><b>NZD $1186</b></center></td>
+        <td class="dom_one"><center><button class="dom_button">Select</button></center></td>
       </tr>
       <tr>
-        <td style="padding: 20px 20px;"><center><b>Departure Time</b><br><br> 15:00 hrs</center></td>
-        <td style="padding: 20px 20px;"><center><b>Flight Time</b> <br><br> 20 hrs </center></td>
-        <td style="padding: 20px 20px;"><center><b>Arrival Time</b><br><br> 5:00 hrs</center></td>
+        <td class="dom_one"><center><b>Departure Time</b><br><br> 15:00 hrs</center></td>
+        <td class="dom_one"><center><b>Flight Time</b> <br><br> 5 hrs </center></td>
+        <td class="dom_one"><center><b>Arrival Time</b><br><br> 20:00 hrs</center></td>
+      </tr>             
+    </table>
+  </td>
+</tr> 
+<tr>
+  <td style="border: none;"><br><br></td>
+</tr>
+<tr>
+  <td>
+    <table border="1">
+      <tr>
+        <td class="dom_one"><img src="/static/Turkish-Airlines.png" style="border-radius: 10px;"></td>
+        <td class="dom_one"><center><b>NZD $1005</b></center></td>
+        <td class="dom_one"><center><button class="dom_button">Select</button></center></td>
+      </tr>
+      <tr>
+        <td class="dom_one"><center><b>Departure Time</b><br><br> 15:00 hrs</center></td>
+        <td class="dom_one"><center><b>Flight Time</b> <br><br> 14 hrs </center></td>
+        <td class="dom_one"><center><b>Arrival Time</b><br><br> 5:00 hrs</center></td>
+      </tr>             
+    </table>
+  </td>
+</tr> 
+<tr>
+  <td style="border: none;"><br><br></td>
+</tr>
+<tr>
+  <td>
+    <table border="1">
+      <tr>
+        <td class="dom_one"><img src="/static/EtihadAirways.png" style="border-radius: 10px;"></td>
+        <td class="dom_one"><center><b>NZD $1499</b></center></td>
+        <td class="dom_one"><center><button class="dom_button">Select</button></center></td>
+      </tr>
+      <tr>
+        <td class="dom_one"><center><b>Departure Time</b><br><br> 00:00 hrs</center></td>
+        <td class="dom_one"><center><b>Flight Time</b> <br><br> 12 hrs </center></td>
+        <td class="dom_one"><center><b>Arrival Time</b><br><br> 12:00 hrs</center></td>
+      </tr>             
+    </table>
+  </td>
+</tr> 
+<tr>
+  <td style="border: none;"><br><br></td>
+</tr>
+<tr>
+  <td>
+    <table border="1">
+      <tr>
+        <td class="dom_one"><img src="/static/JetstarAU.png" style="border-radius: 10px;"></td>
+        <td class="dom_one"><center><b>NZD $965</b></center></td>
+        <td class="dom_one"><center><button class="dom_button">Select</button></center></td>
+      </tr>
+      <tr>
+        <td class="dom_one"><center><b>Departure Time</b><br><br> 5:00 hrs</center></td>
+        <td class="dom_one"><center><b>Flight Time</b> <br><br> 10 hrs </center></td>
+        <td class="dom_one"><center><b>Arrival Time</b><br><br> 15:00 hrs</center></td>
+      </tr>             
+    </table>
+  </td>
+</tr> 
+<tr>
+  <td style="border: none;"><br><br></td>
+</tr>
+<tr>
+  <td>
+    <table border="1">
+      <tr>
+        <td class="dom_one"><img src="/static/Ana2.png" style="border-radius: 10px;"></td>
+        <td class="dom_one"><center><b>NZD $923</b></center></td>
+        <td class="dom_one"><center><button class="dom_button">Select</button></center></td>
+      </tr>
+      <tr>
+        <td class="dom_one"><center><b>Departure Time</b><br><br> 15:00 hrs</center></td>
+        <td class="dom_one"><center><b>Flight Time</b> <br><br> 3 hrs </center></td>
+        <td class="dom_one"><center><b>Arrival Time</b><br><br> 18:00 hrs</center></td>
+      </tr>             
+    </table>
+  </td>
+</tr> 
+<tr>
+  <td style="border: none;"><br><br></td>
+</tr>
+<tr>
+  <td>
+    <table border="1">
+      <tr>
+        <td class="dom_one"><img src="/static/ChinaEasternAirlines.png" style="border-radius: 10px;"></td>
+        <td class="dom_one"><center><b>NZD $801</b></center></td>
+        <td class="dom_one"><center><button class="dom_button">Select</button></center></td>
+      </tr>
+      <tr>
+        <td class="dom_one"><center><b>Departure Time</b><br><br> 2:00 hrs</center></td>
+        <td class="dom_one"><center><b>Flight Time</b> <br><br> 14 hrs </center></td>
+        <td class="dom_one"><center><b>Arrival Time</b><br><br> 16:00 hrs</center></td>
+      </tr>             
+    </table>
+  </td>
+</tr> 
+<tr>
+  <td style="border: none;"><br><br></td>
+</tr>
+<tr>
+  <td>
+    <table border="1">
+      <tr>
+        <td class="dom_one"><img src="/static/FijiAirways.png" style="border-radius: 10px;"></td>
+        <td class="dom_one"><center><b>NZD $999</b></center></td>
+        <td class="dom_one"><center><button class="dom_button">Select</button></center></td>
+      </tr>
+      <tr>
+        <td class="dom_one"><center><b>Departure Time</b><br><br> 15:00 hrs</center></td>
+        <td class="dom_one"><center><b>Flight Time</b> <br><br> 7 hrs </center></td>
+        <td class="dom_one"><center><b>Arrival Time</b><br><br> 22:00 hrs</center></td>
+      </tr>             
+    </table>
+  </td>
+</tr> 
+<tr>
+  <td style="border: none;"><br><br></td>
+</tr>
+<tr>
+  <td>
+    <table border="1">
+      <tr>
+        <td class="dom_one"><img src="/static/Emirates2.png" style="border-radius: 10px;"></td>
+        <td class="dom_one"><center><b>NZD $1469</b></center></td>
+        <td class="dom_one"><center><button class="dom_button">Select</button></center></td>
+      </tr>
+      <tr>
+        <td class="dom_one"><center><b>Departure Time</b><br><br> 15:00 hrs</center></td>
+        <td class="dom_one"><center><b>Flight Time</b> <br><br> 20 hrs </center></td>
+        <td class="dom_one"><center><b>Arrival Time</b><br><br> 11:00 hrs</center></td>
+      </tr>             
+    </table>
+  </td>
+</tr> 
+<tr>
+  <td style="border: none;"><br><br></td>
+</tr>
+<tr>
+  <td>
+    <table border="1">
+      <tr>
+        <td class="dom_one"><img src="/static/Qantas-1.png" style="border-radius: 10px;"></td>
+        <td class="dom_one"><center><b>NZD $1145</b></center></td>
+        <td class="dom_one"><center><button class="dom_button">Select</button></center></td>
+      </tr>
+      <tr>
+        <td class="dom_one"><center><b>Departure Time</b><br><br> 11:00 hrs</center></td>
+        <td class="dom_one"><center><b>Flight Time</b> <br><br> 17 hrs </center></td>
+        <td class="dom_one"><center><b>Arrival Time</b><br><br> 4:00 hrs</center></td>
+      </tr>             
+    </table>
+  </td>
+</tr> 
+<tr>
+  <td style="border: none;"><br><br></td>
+</tr>
+<tr>
+  <td>
+    <table border="1">
+      <tr>
+        <td class="dom_one"><img src="/static/SrilankanAirlines.png" style="border-radius: 10px;"></td>
+        <td class="dom_one"><center><b>NZD $1387</b></center></td>
+        <td class="dom_one"><center><button class="dom_button">Select</button></center></td>
+      </tr>
+      <tr>
+        <td class="dom_one"><center><b>Departure Time</b><br><br> 8:00 hrs</center></td>
+        <td class="dom_one"><center><b>Flight Time</b> <br><br> 9 hrs </center></td>
+        <td class="dom_one"><center><b>Arrival Time</b><br><br> 17:00 hrs</center></td>
+      </tr>             
+    </table>
+  </td>
+</tr> 
+<tr>
+  <td style="border: none;"><br><br></td>
+</tr>
+<tr>
+  <td>
+    <table border="1">
+      <tr>
+        <td class="dom_one"><img src="/static/MalaysiaAirlines.png" style="border-radius: 10px;"></td>
+        <td class="dom_one"><center><b>NZD $1056</b></center></td>
+        <td class="dom_one"><center><button class="dom_button">Select</button></center></td>
+      </tr>
+      <tr>
+        <td class="dom_one"><center><b>Departure Time</b><br><br> 6:00 hrs</center></td>
+        <td class="dom_one"><center><b>Flight Time</b> <br><br> 19 hrs </center></td>
+        <td class="dom_one"><center><b>Arrival Time</b><br><br> 1:00 hrs</center></td>
       </tr>             
     </table>
   </td>
