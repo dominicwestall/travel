@@ -11,6 +11,10 @@ def index():
 def search_results():
     return render_template('searchresults.html')
 
+@app.route('/usermustlogin', methods=['POST', 'GET'])
+def usermustlogin():
+    return render_template('signin.html')
+
 @app.route('/about')
 def about():
     return render_template('about.html')
@@ -52,7 +56,7 @@ def user_signin():
         rows=cur.fetchone()
         if rows:
             con.close()
-            return render_template('index.html')
+            return render_template('booking made.html')
         else:
             con.close()
             msg = "Unsuccessful login. Wrong email address and/or password"
