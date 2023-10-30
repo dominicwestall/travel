@@ -24,49 +24,94 @@
             display: table;
             margin: 0 auto;
           }
-          .dom_menu_large_text{
-                font-size:x-large;
-            }
+          body{
+              background-image:  url("/static/booking\ made.avif");
+              background-repeat: no-repeat;
+              background-attachment: fixed;
+              background-size: 1920px 930px;
+          }
           .dom_content_area
             {
               margin: 0 auto;
-               width: 45%;
+               width: 55%;
             }
+          .dom_menu_large_text{
+                font-size:x-large;
+          }
+.header {
+  overflow: hidden;
+  background-color:#fdfdfd;
+  padding: 10px 0px;
+  opacity: 0.8;
+  width: 1150px;
+  margin-left: 350px;
+  border-radius: 5px;
+}
+
+.header a {
+  color: black;
+  text-align: center;
+  padding: 20px 40px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a:hover {
+  background-color: rgb(156, 156, 156);
+  color: rgb(10, 10, 10);
+}
+
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.nav{
+text-align: center;
+  padding: 15px;
+}
+
       </style>
     </head>
 <body>
     <img class="dom_logo" src="/static/logo-no-background.png">
     <br>
 
-    <div id="menu" class="center-menu">
-        <div class="dom_menu_large_text" style="display: table;">
-          <ul id="horizontal-list" >
-            <li style="display: inline;"><a href="/">Home</a></li>
-            <li style="display: inline;"><a href="/about">About</a></li>
-            <li style="display: inline;"><a href="/contact">Contact Us</a></li>
-            <li style="display: inline;"><a href="/reviews">Reviews</a></li>
-            <li style="display: inline;"><a href="/settings">Settings</a></li>
-            <li style="display: inline;"><a href="/signin">Sign in</a></li>
-          </ul>
-        </div>
+    <div class="header">            
+      <div class="nav">
+          <a style="font-size: 30px;" href="/">Home</a>
+          <a style="font-size: 30px;" href="/contact">Contact Us</a>
+          <a style="font-size: 30px;" href="/about">About Us</a>
+          <a style="font-size: 30px;" href="/reviews">Reviews</a>
+          <a style="font-size: 30px;" href="/settings">Settings</a>
+          <a style="font-size: 30px;" href="/signin">Sign In</a>
       </div>
+  </div>
 
     <!-- content varies for each page from here -->
     <div id="contentOne"></div>
     <div id="contentTwo" class="center-menu">
-    
-        <table class="dom_content_area" border="2">
+    <br><br>
+        <table class="dom_content_area" border="2" style="opacity: 0.9; background-color: beige;">
           <tr>
-            <td>
-            Booking made page
-            <br>
-            <br>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro necessitatibus, enim neque sapiente at quia dolore quos, architecto cupiditate repellat fuga quis illo labore provident rem quibusdam soluta quas optio!
-            <br>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ea cum atque magnam dolore adipisci rerum quae, debitis doloribus aut reprehenderit in nulla dolores pariatur, voluptate nisi quam totam eum!
-            <br>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est eligendi suscipit unde accusantium eum repellendus vero eveniet! A repellendus ullam architecto repudiandae, modi nemo nesciunt reprehenderit tempore error ut eaque.
+            <td style="padding: 20px; font-size: 20px; text-align: justify">
+              <p style="text-align: center; font-size: x-large; padding-top: 10px;">Congratulations on Your Successful Flight Booking!</p><br>
 
+              We are thrilled to extend our warmest congratulations to you for successfully booking your flight through our website! Your exciting journey is now set to take flight, and we couldn't be happier to be a part of this special moment with you.<br><br>
+              
+              Your trust in our platform and your seamless booking experience truly means the world to us. We understand that planning a trip can be both exciting and, at times, a bit stressful, but your decision to choose us has made us even more determined to provide you with top-notch service and support throughout your travel adventure.<br><br>
+
+              Your flight booking is not just a transaction for us; it represents the start of a memorable adventure that we hope will be filled with joy, discovery, and cherished moments. We are here to support you every step of the way, from now until you touch down at your destination.<br><br>
+              
+              We can't wait to hear about your journey and the exciting experiences you'll have. If you ever need any assistance or have questions about your upcoming trip, please don't hesitate to get in touch with our team. We're always here to help.<br><br>
+              
+              Once again, congratulations on your successful flight booking, and we look forward to being a part of your travel story. Bon voyage!<br><br>
+              
+              Warm regards,<br>
+              Tripadvisor
+              
             </td>
           </tr>
         </table>

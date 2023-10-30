@@ -24,9 +24,49 @@
             display: table;
             margin: 0 auto;
           }
+          body{
+              background-image:  url("/static/login\ pic.jpg");
+              background-repeat: no-repeat;
+              background-attachment: fixed;
+              background-size: 1920px 930px;
+          }
           .dom_menu_large_text{
                 font-size:x-large;
             }
+.header {
+  overflow: hidden;
+  background-color:#fdfdfd;
+  padding: 10px 0px;
+  opacity: 0.8;
+  width: 1150px;
+  margin-left: 350px;
+  border-radius: 5px;
+}
+
+.header a {
+  color: black;
+  text-align: center;
+  padding: 20px 40px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a:hover {
+  background-color: rgb(156, 156, 156);
+  color: rgb(10, 10, 10);
+}
+
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.nav{
+text-align: center;
+  padding: 15px;
+}
       </style>
     </head>
     <body>
@@ -34,58 +74,44 @@
         <img class="dom_logo" src="/static/logo-no-background.png">
         <br>
 
-        <div id="menu" class="center-menu">
-            <div class="dom_menu_large_text" style="display: table;">
-              <ul id="horizontal-list" >
-                <li style="display: inline;"><a href="/">Home</a></li>
-                <li style="display: inline;"><a href="/about">About</a></li>
-                <li style="display: inline;"><a href="/contact">Contact Us</a></li>
-                <li style="display: inline;"><a href="/reviews">Reviews</a></li>
-                <li style="display: inline;"><a href="/settings">Settings</a></li>
-                <li style="display: inline;"><a href="/signin">Sign in</a></li>
-              </ul>
-            </div>
+        <div class="header">            
+          <div class="nav">
+              <a style="font-size: 30px;" href="/">Home</a>
+              <a style="font-size: 30px;" href="/contact">Contact Us</a>
+              <a style="font-size: 30px;" href="/about">About Us</a>
+              <a style="font-size: 30px;" href="/reviews">Reviews</a>
+              <a style="font-size: 30px;" href="/settings">Settings</a>
+              <a style="font-size: 30px;" class="active" href="/signin">Sign In</a>
           </div>
+      </div>
 
         <!-- content varies for each page from here -->
         <div id="contentOne"></div>
         <div id="contentTwo" class="center-menu">
           {% if msg %}
-          <div class="center-menu">
-            <p style="color:red; font-weight: bolder; font-size: larger;">{{msg}}.</p>
-            <br>
-          </div>
+            <p>{{msg}}</p>
           {% endif %}
         
-            <form method="post" action="/usersignin">
+            <form method="post" action="/usersignin"><br><br>
 
-              <table border="1" width="100%">
-                <tr>
-                </tr>
-                <tr>
+              <table border="1" style="background-color: beige; opacity: 0.9; border-radius: 5px;">
+                
                   <td>
-                    <table border="0" width="100%">
+                    <table style="padding: 25px;">
                       <tr>
-                        <td>
-                          <center>Please log in to continue booking. Thank you.</center>
-                          <br>
-                          <br><br>
-                          <center><input type='email' name="email" placeholder="Email" required style="width: 200px; height: 35px; border-radius: 5px;"></center></td><br><br>
+                        <td><input type='email' name="email" placeholder="Email" required style="width: 200px; height: 35px; border-radius: 5px;"></td><br><br>
                       </tr>
                       <tr>
-                        <td><br><br><center><input type="password" name="password" placeholder="Password" required style="width: 200px; height: 35px; border-radius: 5px;"></center></td>
+                        <td><br><br><input type="password" name="password" placeholder="Password" required style="width: 200px; height: 35px; border-radius: 5px;"></td>
                       </tr>
                       <tr>
-                        <td><br><br><center><input type="submit" name="submit" value="Submit" style="width: 150px; height: 35px; cursor: pointer; border-radius: 10px; font-size: medium;"></center>
-                        
-                        <br><br>
-                        </td>
+                        <td><br><br><center><input type="submit" name="submit" value="Submit" style="width: 150px; height: 35px; cursor: pointer; border-radius: 10px; font-size: medium;"></center><br></td>
                       </tr>
                     </table>
                   </td>
-                </tr>
+                
               </table>
-              <br><br><center>
+              <br><center>
               <span style="font-size: large;"><b>New to Tripadvisor?</span><br><br>
               <a href="/registration"><span style="font-size: large;">Join Now</span></a>
             </center>

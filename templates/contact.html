@@ -32,25 +32,56 @@
               margin: 0 auto;
                width: 45%;
             }
+.header {
+  overflow: hidden;
+  background-color:#fdfdfd;
+  padding: 10px 0px;
+  opacity: 0.8;
+  width: 1150px;
+  margin-left: 350px;
+  border-radius: 5px;
+}
+
+.header a {
+  color: black;
+  text-align: center;
+  padding: 20px 40px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a:hover {
+  background-color: rgb(156, 156, 156);
+  color: rgb(10, 10, 10);
+}
+
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.nav{
+text-align: center;
+  padding: 15px;
+}
       </style>
     </head>
     <body>
 
         <img class="dom_logo" src="/static/logo-no-background.png">
         <br>
-
-        <div id="menu" class="center-menu">
-            <div class="dom_menu_large_text" style="display: table;">
-              <ul id="horizontal-list" >
-                <li style="display: inline;"><a href="/">Home</a></li>
-                <li style="display: inline;"><a href="/about">About</a></li>
-                <li style="display: inline;"><a href="/contact">Contact Us</a></li>
-                <li style="display: inline;"><a href="/reviews">Reviews</a></li>
-                <li style="display: inline;"><a href="/settings">Settings</a></li>
-                <li style="display: inline;"><a href="/signin">Sign in</a></li>
-              </ul>
-            </div>
+        <div class="header">            
+          <div class="nav">
+            <a style="font-size: 30px;" href="/">Home</a>
+            <a style="font-size: 30px;" class="active" href="/contact">Contact Us</a>
+            <a style="font-size: 30px;" href="/about">About Us</a>
+            <a style="font-size: 30px;" href="/reviews">Reviews</a>
+            <a style="font-size: 30px;" href="/settings">Settings</a>
+            <a style="font-size: 30px;" href="/signin">Sign In</a>
           </div>
+        </div>
 
         <!-- content varies for each page from here -->
         <div id="contentOne"></div>
@@ -61,7 +92,7 @@
             <table class="dom_content_area" border="2">
               <tr>
                 <td>
-                Contact Us page
+                Contact page
                 <br>
                 <br>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro necessitatibus, enim neque sapiente at quia dolore quos, architecto cupiditate repellat fuga quis illo labore provident rem quibusdam soluta quas optio!

@@ -24,35 +24,50 @@
               display: table;
               margin: 0 auto;
             }
+            body{
+              background-image:  url("/static/landscape.avif");
+              background-repeat: no-repeat;
+              background-attachment: fixed;
+              background-size: 1920px 930px;
+            }
             .dom_menu_large_text{
                 font-size:x-large;
             }
 
-            .center-align {
-                text-align: center;
-            }
- 
+.header {
+  overflow: hidden;
+  background-color:#fdfdfd;
+  padding: 10px 0px;
+  opacity: 0.8;
+  width: 1150px;
+  margin-left: 350px;
+  border-radius: 5px;
+}
 
-            .fieldset {
-                text-align: center;
-            }
-            .center-align .radio-group {
-                
-                display: inline-block; 
-                text-align: center; /* Adjust as needed */
-                margin: auto;
-            }
+.header a {
+  color: black;
+  text-align: center;
+  padding: 20px 40px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
 
-            .radio-input {
-                display: inline-block;
-                vertical-align: top;
-            }
+.header a:hover {
+  background-color: rgb(156, 156, 156);
+  color: rgb(10, 10, 10);
+}
 
-            .radio-label {
-                display: inline-block;
-                vertical-align: top;
-                
-            }
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.nav{
+text-align: center;
+  padding: 15px;
+}
            
         </style>
     </head>
@@ -60,18 +75,16 @@
 
         <img class="dom_logo" src="/static/logo-no-background.png">
         <br>
-        <div id="menu" class="center-menu">
-            <div class="dom_menu_large_text" style="display: table;">
-              <ul id="horizontal-list" >
-                <li style="display: inline;"><a href="#">Home</a></li>
-                <li style="display: inline;"><a href="/about">About</a></li>
-                <li style="display: inline;"><a href="/contact">Contact Us</a></li>
-                <li style="display: inline;"><a href="/reviews">Reviews</a></li>
-                <li style="display: inline;"><a href="/settings">Settings</a></li>
-                <li style="display: inline;"><a href="/signin">Sign in</a></li>
-              </ul>
+            <div class="header">            
+                <div class="nav">
+                    <a style="font-size: 30px;" class="active" href="#">Home</a>
+                    <a style="font-size: 30px;" href="/contact">Contact Us</a>
+                    <a style="font-size: 30px;" href="/about">About Us</a>
+                    <a style="font-size: 30px;" href="/reviews">Reviews</a>
+                    <a style="font-size: 30px;" href="/settings">Settings</a>
+                    <a style="font-size: 30px;" href="/signin">Sign In</a>
+                </div>
             </div>
-        </div>
 
         <!-- content varies for each page from here -->
         <div id="contentOne"></div>
@@ -83,22 +96,15 @@
 
     <form action="/searchresults" method="post">
         <br><br>
-    <table border="2" style="width: 100%;">
+    <table border="2" style="width: 100%; background-color: beige; opacity: 0.9;">
         <tr>
             <td>
-                <table border="0" width="100%">
+                <table border="0" style="width: 100%; text-align: center;">
                     <tr>
-                        <td style="font-size:x-large; padding: 15px;">
-                            
-                                <div class="center-align">
-                                    <div class="radio-group">
-                                        <br>
-                                        <input class="radio-input" type="radio" name="type" id="roundtrip" value="roundtrip" /><label class="radio-label" for="track">Round trip</label>
-                                        <input class="radio-input" type="radio" name="type" id="oneway" value="oneway"  /><label class="radio-label" for="event">One way</label>
-                                        <input class="radio-input" type="radio" name="type" id="multi" value="multi" /><label class="radio-label" for="message">Multi City</label>
-                                    </div>
-                                </div>
-                            
+                        <td style="font-size:x-large; padding: 5px;"><br>
+                            <input  type="radio" name="type" id="roundtrip" value="roundtrip" /><label style="display: inline; padding-right: 25px;" for="track">Round Trip</label>
+                            <input  type="radio" name="type" id="oneway" value="oneway"  /><label style="display: inline; padding-right: 25px;" for="event">One Way</label>
+                            <input  type="radio" name="type" id="multi" value="multi" /><label style="display: inline;" for="message">Multi City</label>
                         </td>
                     </tr>
                 </table>
