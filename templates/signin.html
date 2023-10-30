@@ -52,7 +52,7 @@
         <div id="contentTwo" class="center-menu">
           {% if msg %}
           <div class="center-menu">
-            <p>{{msg}}</p>
+            <p style="color:red; font-weight: bolder; font-size: larger;">{{msg}}.</p>
             <br>
           </div>
           {% endif %}
@@ -61,19 +61,25 @@
 
               <table border="1" width="100%">
                 <tr>
-                  <!-- <td>Sign In</td> -->
                 </tr>
                 <tr>
                   <td>
                     <table border="0" width="100%">
                       <tr>
-                        <td><center><input type='email' name="email" placeholder="Email" required style="width: 200px; height: 35px; border-radius: 5px;"></center></td><br><br>
+                        <td>
+                          <center>Please log in to continue booking. Thank you.</center>
+                          <br>
+                          <br><br>
+                          <center><input type='email' name="email" placeholder="Email" required style="width: 200px; height: 35px; border-radius: 5px;"></center></td><br><br>
                       </tr>
                       <tr>
                         <td><br><br><center><input type="password" name="password" placeholder="Password" required style="width: 200px; height: 35px; border-radius: 5px;"></center></td>
                       </tr>
                       <tr>
-                        <td><br><br><center><input type="submit" name="submit" value="Submit" style="width: 150px; height: 35px; cursor: pointer; border-radius: 10px; font-size: medium;"></center></td>
+                        <td><br><br><center><input type="submit" name="submit" value="Submit" style="width: 150px; height: 35px; cursor: pointer; border-radius: 10px; font-size: medium;"></center>
+                        
+                        <br><br>
+                        </td>
                       </tr>
                     </table>
                   </td>
