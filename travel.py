@@ -72,12 +72,19 @@ def registertheuser():
     if request.method == 'POST':
         emailaddressofuser = request.form['email']
         passwordofuser = request.form['password']
+        confirmpasswordofuser = request.form['confirmpassword']
         if not emailaddressofuser or passwordofuser:
-            with sql.connect("travellogin.db") as con:
-               cur = con.cursor()
-               cur.execute("insert into Users(Email, Password) values (?,?)", (emailaddressofuser, passwordofuser))
-               con.commit()
-               msg = "New user successfully added"
+            # if the password fields do not match, return an error
+            if confirmpasswordofuser != passwordofuser:
+                msg = "Passwords do not match"
+                return render_template('registration.html', msg=msg)
+            else:
+                with sql.connect("travellogin.db") as con:
+                    cur = con.cursor()
+                    cur.execute("insert into Users(Email, Password) values (?,?)", (emailaddressofuser, passwordofuser))
+                    con.commit()
+                    msg = "New user successfully added"
+                    
         else:
             msg = "New user: error in insert operation"
             con.rollback()
