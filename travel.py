@@ -15,6 +15,10 @@ def search_results():
 def usermustlogin():
     return render_template('signin.html')
 
+@app.route('/reviewsubmission', methods=['POST', 'GET'])
+def reviewsubmission():
+    return render_template('reviewsthankyou.html')
+
 @app.route('/about')
 def about():
     return render_template('about.html')
