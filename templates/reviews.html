@@ -27,7 +27,7 @@ body{
     <a style="font-size: 30px;" href="/contact">Contact Us</a>
     <a style="font-size: 30px;" href="/about">About Us</a>
     <a style="font-size: 30px;" class="active" href="/reviews">Reviews</a>  <!-- Current page is highlighted as "active" -->
-    <a style="font-size: 30px;" href="/settings">Settings</a>
+    <a style="font-size: 30px;" href="">Settings</a>
     <a style="font-size: 30px;" href="/signin">Sign In</a>
   </div>
 </div>
@@ -37,10 +37,10 @@ body{
 <div id="contentTwo" class="center-menu">
 <br><br>
 <form action="reviewsubmission" method="post">
-<table class="dom_content_area" border="2" style="opacity: 0.9; background-color: beige;">
+<table class="dom_content_area" border="2" style="opacity: 0.9; background-color: beige; width: 70%;">
   <tr>
-    <td style="padding: 40px; font-size: 20px;">
-      <p style="font-size: x-large; font-weight: bold;">Tripadvisor Reviews</p><br>
+    <td style="padding: 40px; font-size: 22px;">
+      <p style="font-size: xx-large;">Tripadvisor Reviews</p><br>
       <table>
         <tr style="padding: 0px 15px;">
           <td>
@@ -73,7 +73,7 @@ body{
           <td>
             <!-- Reviewer 4 -->
             <img class="and_image" src="/static/Default User Pic.png" height="100">
-            <span style="font-size: larger; text-align: center; font-weight: bold;">Andreas Howard</span>
+            <span style="font-size: larger; text-align: center; font-weight: bold;">Andrew Smith</span>
             <img class="and_image" src="/static/Five Stars.png" height="20">
             <span style="font-size: smaller; text-align: center; color: grey;">22-11-2023</span><br>
             <span>Thank you, thank you so much! I used to get such bad headaches for organising the holidays! So much better with this!</span>
@@ -101,50 +101,55 @@ body{
       </table>
     </td>
   </tr>
+</table>
+<br><br>
+<table class="dom_content_area" border="2" style="opacity: 0.9; background-color: beige; width: 70%;">
   <tr>
     <td>
         <table width="100%" border="0" style="padding: 25px;">
           <tr>
             <td colspan="2">
-              <p style="font-weight: bold; font-size: larger;">Kindly share a feedback of your experience with us!</p>
+              <p style="font-size: x-large;">Kindly share a feedback of your experience with us!</p>
               <br>
             </td>
           </tr>
           <tr>
-            <td style="padding: 15px 15px;"><label style="font-weight: bold;">Name: </label> </td>
-            <td><input style="width: 400px; height: 25px;" type="text" name="name" required></td>
+            <td style="padding: 15px 15px; font-size: 18px;"><label style="font-weight: bold;">Name: </label> </td>
+            <td><input style="width: 400px; height: 35px; border-radius: 5px;" type="text" name="name" required></td>
           </tr>
           <tr>
-            <td style="padding: 15px 15px;"><label style="font-weight: bold;">Email: </label> </td>
-            <td><input style="width: 400px; height: 25px;" type="email" name="email" required></td>
+            <td style="padding: 15px 15px; font-size: 18px;"><label style="font-weight: bold;">Email: </label> </td>
+            <td><input style="width: 400px; height: 35px; border-radius: 5px;" type="email" name="email" required></td>
           </tr>
           <tr>
            
-            <td style="padding: 15px 15px;"><label style="font-weight: bold;">Rating: </label> </td>
+            <td style="padding: 15px 15px; font-size: 18px;"><label style="font-weight: bold;">Rating: </label> </td>
            
             <td>
-              <input  type="radio" name="type" id="one" value="one"/><label style="display: inline; padding-right: 25px;" for="one">1</label>
-              <input  type="radio" name="type" id="two" value="two"/><label style="display: inline; padding-right: 25px;" for="two">2</label>
-              <input  type="radio" name="type" id="three" value="three"/><label style="display: inline; padding-right: 25px;" for="three">3</label>
-              <input  type="radio" name="type" id="four" value="four"/><label style="display: inline; padding-right: 25px;" for="four">4</label>
-              <input  type="radio" name="type" id="five" value="five"/><label style="display: inline; padding-right: 25px;" for="five">5</label>
+              <input  type="radio" name="type" /><label style="display: inline; padding-right: 25px;" for="one"><b>1 (Poor)</b></label>
+              <input  type="radio" name="type" /><label style="display: inline; padding-right: 25px;" for="two"><b>2 (Unsatisfactory)</b></label>
+              <input  type="radio" name="type" /><label style="display: inline; padding-right: 25px;" for="three"><b>3 (Satisfactory)</b></label>
+              <input  type="radio" name="type" /><label style="display: inline; padding-right: 25px;" for="four"><b>4 (Very Satisfactory)</b></label>
+              <input  type="radio" name="type" /><label style="display: inline; padding-right: 25px;" for="five"><b>5 (Outstanding)</b></label>
              
             </td>
           </tr>
           <tr>
-            <td style="padding: 15px; vertical-align: top;"><label style="font-weight: bold;">Review: </label></td>
-            <td style="padding-top: 15px;"><textarea id="tripreview" name="review" rows="10" cols="100" required></textarea></td>
+            <td style="padding: 15px; vertical-align: top; font-size: 18px;"><label style="font-weight: bold;">Review: </label></td>
+            <td style="padding: 15px;"><textarea id="tripreview" name="review" rows="10" cols="100" style="border-radius: 5px; border: 2px solid black;" required></textarea></td>
           </tr>
           <tr>
+            <td></td>
             <td colspan="2">
               <br>
-              <input style="margin-left: 110px; padding: 10px;" type="submit" name="submit" value="Submit Review">
+              <input style="font-size: medium; border-radius: 5px; width: 150px; height: 35px; cursor: pointer;" type="submit" name="submit" value="Submit Review">
             </td>
           </tr>
         </table>
     </td>
   </tr>
 </table>
+<br><br>
 </form>
 </div>
 
