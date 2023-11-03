@@ -20,6 +20,11 @@ def search_results():
 def usermustlogin():
     return render_template('signin.html')
 
+# Define a route for the review submission page
+@app.route('/reviewsubmission', methods=['POST', 'GET'])
+def reviewsubmission():
+    return render_template('reviewsthankyou.html')
+
 # Define a route for an about page
 @app.route('/about')
 def about():
