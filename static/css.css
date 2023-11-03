@@ -28,6 +28,13 @@
     width: 20%; /* Set the width of the logo (adjust as needed) */
 }
 
+/* Styles for elements with the class "and_image" */
+.and_image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* Styles for elements with the class "center-menu" */
 .center-menu {
     display: table; /* Display as a table to center content */
